@@ -11,7 +11,6 @@ public:
         for (int i = 0; i < N; i++) {
             csum += A[i];
             
-            // If (csum - K) exists in map, we found a subarray summing to K
             if (myMap.find(csum - K) != myMap.end()) {
                 int len = i - myMap[csum - K];
                 result = max(result, len);

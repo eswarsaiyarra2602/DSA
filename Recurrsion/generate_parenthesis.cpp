@@ -6,7 +6,7 @@ public:
     vector<string>res;
     void solve(string &curr , int n , int open , int close){
         if(curr.length()==2*n){
-            res.push_back(curr);x
+            res.push_back(curr);
             return;
         }
         if(open<n){
